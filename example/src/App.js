@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'basic-react-button'
+import ButtonComponent from 'basic-react-button'
 import 'basic-react-button/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ButtonComponent />
 }
 
 export default App
