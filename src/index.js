@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Styles from './styles.module.css'
+import './button.css'
+// import Styles from './styles.module.css'
 import PropTypes from 'prop-types'
 
 export default function BasicButtonComponent({
@@ -55,9 +56,9 @@ export default function BasicButtonComponent({
       onClick={onClick}
       onMouseEnter={() => setButtonColor(checkHoverBgColor)}
       onMouseLeave={() => setButtonColor(bgColor)}
-      className={`${Styles.button} ${Styles[checkShape]} ${Styles[checkSize]} ${Styles[checkTransition]} ${Styles[checkBorder]}`}
+      className={`button ${checkSize} ${checkShape} ${checkBorder} ${checkFontFamily} ${checkTransition}`}
       style={{
-        backgroundColor: buttonColor,
+        backgroundColor: bgColor,
         fontFamily: checkFontFamily,
         color: fontColor
       }}
